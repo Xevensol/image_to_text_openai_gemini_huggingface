@@ -30,14 +30,15 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.markdown("<h1 class='title'>Image Analyzer</h1>", unsafe_allow_html=True)
 
-st.markdown("<h6 style='font-family: Arial, sans-serif;'>This app for image Analyzing using the following given Models. Just select a model and see the result.</h6>", unsafe_allow_html=True)
+st.markdown("<h1 class='title'>Image Analyzer 🔎🖼️ </h1> " , unsafe_allow_html=True)
+
+st.markdown("<h7 style='font-family: Arial, sans-serif;'>Discover image analysis with this app: simply select a model and view the results.</h7>", unsafe_allow_html=True)
 st.markdown("<h6 style='font-family: Arial, sans-serif;'> How it Works : </h6>", unsafe_allow_html=True)
-st.markdown("<h6 style='font-family: Arial, sans-serif;'>1 . Select Model First <br> 2. Click on Browse select image <br> 3. Click on Analyze Button </h6>", unsafe_allow_html=True)
+st.markdown("<h8 style='font-family: Arial, sans-serif;'>1 . Select Model First <br> 2. Click on Browse select image <br> 3. Click on Analyze Button </h8>", unsafe_allow_html=True)
 
 
-Model = st.radio("Select Model", ("Openai_vision_model", "Hugging_face_sales_force_model","Gemini-1.5-flash","claude-3-haiku"))
+Model = st.radio(" Select Model", ("Openai_vision_model", "Hugging_face_sales_force_model","Gemini-1.5-flash "))
 
 # openai vision model 
 def analyze_image(image_url):
